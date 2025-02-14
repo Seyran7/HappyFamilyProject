@@ -1,3 +1,5 @@
+package org.Turing;
+
 import java.util.Arrays;
 
 public class Pet {
@@ -19,13 +21,17 @@ public class Pet {
         this.species=species;
         this.nickName=nickName;
     }
-    public Pet(String species,int age){
-        this.species=species;
-        this.age=age;
-
+    public Pet(){
     }
 
 
+    public String getNickName() {
+        return nickName;
+    }
+
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
+    }
 
     public int getTrickLevel(){
         return trickLevel;
@@ -37,9 +43,7 @@ public class Pet {
     private void respond(){
         System.out.println("Hello owner.I'm " +nickName+".I miss you!.");
     }
-    public void getRespond(){
-        System.out.println("Hello owner.I'm " +nickName+".I miss you!.");
-
+    public void getRespond(){System.out.println("Hello owner.I'm " +nickName+".I miss you!.");
     }
 
     private void foul(){
@@ -48,6 +52,7 @@ public class Pet {
     public void getFoul() {
         System.out.println("I need to cover it up");
     }
+
     private void eat(){
         System.out.println("I'm eating.");
     }
@@ -60,8 +65,6 @@ public class Pet {
     public void setHabits(String[] habits) {
         this.habits = habits;
     }
-
-
 
 
     @Override
